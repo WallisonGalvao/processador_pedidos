@@ -1,6 +1,6 @@
 package com.btgpactual.processadorpedidosapi.connection.rabbitMQ;
 
-import com.btgpactual.processadorpedidosapi.constants.RabbitMQConstants;
+import constants.RabbitMQConstants;
 import jakarta.annotation.PostConstruct;
 import org.springframework.amqp.core.AmqpAdmin;
 import org.springframework.amqp.core.Binding;
@@ -8,7 +8,7 @@ import org.springframework.amqp.core.DirectExchange;
 import org.springframework.amqp.core.Queue;
 import org.springframework.stereotype.Component;
 
-import static com.btgpactual.processadorpedidosapi.constants.RabbitMQConstants.BTG_EXCHANGE;
+import static constants.RabbitMQConstants.BTG_EXCHANGE;
 
 
 @Component

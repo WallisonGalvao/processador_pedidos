@@ -1,9 +1,9 @@
 package com.btgpactual.processadorpedidosapi.controller;
 
-import com.btgpactual.processadorpedidosapi.constants.RabbitMQConstants;
-import com.btgpactual.processadorpedidosapi.domain.contract.ClienteRepository;
-import com.btgpactual.processadorpedidosapi.domain.entity.Cliente;
 import com.btgpactual.processadorpedidosapi.service.RabbitMQService;
+import constants.RabbitMQConstants;
+import domain.contract.ClienteRepository;
+import domain.entity.Cliente;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
