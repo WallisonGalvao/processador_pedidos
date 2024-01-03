@@ -15,14 +15,14 @@ public class Pedido implements Serializable {
 
     @ManyToOne
     @JoinColumn(name= "idCliente")
-    private Long idCliente;
+    private Cliente cliente;
 
     @OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL)
     private List<Item> itens;
 
-    public Pedido(Long idPedido, Long idCliente, List<Item> itens) {
+    public Pedido(Long idPedido, Cliente cliente, List<Item> itens) {
         this.idPedido = idPedido;
-        this.idCliente = idCliente;
+        this.cliente = cliente;
         this.itens = itens;
     }
 
